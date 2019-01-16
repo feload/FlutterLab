@@ -1,17 +1,11 @@
 import 'package:flutter/material.dart';
+import './screens/news_list.dart';
 
-class App extends StatefulWidget {
-  State createState() {
-    return AppState();
-  }
-}
-
-class AppState extends State<App> {
-  Widget build (context) {
+class App extends StatelessWidget {
+  Widget build(context) {
     return MaterialApp(
-      home: Scaffold(
-        body: Text('Body'),
-      )
+      title: 'News!',
+      home: NewsList()
     );
   }
 }
